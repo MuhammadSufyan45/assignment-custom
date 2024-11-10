@@ -1,0 +1,33 @@
+.offers{
+    padding: 10px 8% 20px;
+    background: #f3f3f3;
+}
+.offer-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 0.90rem;
+    margin-top: 30px;
+}
+.offer-content .row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.offer-content .row i{
+    font-size: 50px;
+    color: #388b6f;
+}
+.offer-content .row h3{
+    margin-left: 5px;
+}
+.offer-content .row p{
+    margin-left: 5px;
+}
+@media (max-width:920px){
+    .offer-content{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
